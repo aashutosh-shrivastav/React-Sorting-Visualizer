@@ -1,0 +1,36 @@
+.navbar{
+  background-color: #282c34;
+  min-height: 10vh;
+  
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.btn {
+    display: inline;
+}
+
+.col {
+    display: inline;
+}
+.info-display {
+    float: left;
+    border: 1px solid #282c34;
+    overflow: auto;
+    min-height: 40vh;
+    width: 20vw;
+    
+}
+.array-container{
+    display: inline-block;
+    width: 75vw;
+    border: 1px solid black;
+}
+.array-bar{
+    width: 7px;
+    margin-right: 3px ;
+    display: inline-block;
+
+}
