@@ -12,7 +12,7 @@ import {COLOR_BAR} from './SortingVisualizer';
 const Navbar = ({array, setArray,setSortType,arraySize,setArraySize,isSorting,setIsSorting,isSorted,setIsSorted}) =>{
     const resetArray = (e) => {
         if(isSorting){
-            console.log("connot reset soting is under progress");
+            //console.log("connot reset soting is under progress");
             return;
         }
         setArray( getRandomArray(arraySize));
@@ -20,20 +20,20 @@ const Navbar = ({array, setArray,setSortType,arraySize,setArraySize,isSorting,se
         for(let i=0;i<arraySize;i++){
             aux[i].style.backgroundColor = COLOR_BAR;
         }
-        console.log("reset array using button ");
+        //console.log("reset array using button ");
     }
 
     const bubbleSort =  (e) =>{
         e.preventDefault();
         if(isSorting){
-            console.log("connot reset soting is under progress");
+           // console.log("connot reset soting is under progress");
             return;
         }
         setIsSorting(true);
-        console.log("bubble Sort ");
+        //console.log("bubble Sort ");
         setSortType('bubble');
         const animations = bubbleSortAnimations(array);
-        console.log(animations);
+       // console.log(animations);
         deployAnimations(animations,setIsSorting,setIsSorted);
        
     }
@@ -42,15 +42,15 @@ const Navbar = ({array, setArray,setSortType,arraySize,setArraySize,isSorting,se
     const mergeSort =  (e) =>{
         e.preventDefault();
         if(isSorting){
-            console.log("connot reset soting is under progress");
+            //console.log("connot reset soting is under progress");
             return;
         }
         setIsSorting(true);
 
-        console.log("merge Sort ");
+        //console.log("merge Sort ");
         setSortType('merge');
         const animations  = mergeSortAnimations(array);
-        console.log(animations );
+        //console.log(animations );
         deployMergeAnimations(animations,setIsSorting,setIsSorted);
 
     }
@@ -58,12 +58,12 @@ const Navbar = ({array, setArray,setSortType,arraySize,setArraySize,isSorting,se
     const insertionSort =  (e) =>{
         e.preventDefault();
         if(isSorting){
-            console.log("connot reset soting is under progress");
+            //console.log("connot reset soting is under progress");
             return;
         }
         setIsSorting(true);
 
-        console.log("insertion Sort ");
+        //console.log("insertion Sort ");
         setSortType('insertion');
         const animations = insertionSortAnimations(array);
         deployAnimations(animations,setIsSorting,setIsSorted);
@@ -72,16 +72,16 @@ const Navbar = ({array, setArray,setSortType,arraySize,setArraySize,isSorting,se
     const quickSort =  (e) =>{
         e.preventDefault();
         if(isSorting){
-            console.log("connot reset soting is under progress");
+            //console.log("connot reset soting is under progress");
             return;
         }        
         setIsSorting(true);
 
-        console.log("quick Sort ");
+        //console.log("quick Sort ");
         setSortType('quick');
         const animations =quickSortAnimations(array);
         deployQuickAnimations(animations,setIsSorting,setIsSorted);
-        console.log(animations);
+        //console.log(animations);
     }
     
 

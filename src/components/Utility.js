@@ -5,7 +5,7 @@ export function getRandomArray (arraySize){
     for(let i=0;i<arraySize;i++){
         arr.push(Math.floor(Math.random()*(MAX_H - MIN_H +1)+MIN_H));
     }
-    console.log("random array generated in Utility getrandom array ");
+    //console.log("random array generated in Utility getrandom array ");
    return arr ;
 }
 
@@ -34,7 +34,7 @@ export function testSort(arr1,arr2){
 export const colorChangeRequest = (idx1,idx2,color,Time) =>{
     //const aux = document.getElementsByClassName("array-bar");
     setTimeout(()=>{
-        console.log("index : "+idx1+" and index :"+idx2+" color changed to : "+ color +" at time  t:"+Time+" * "+ DELAY+" =  "+Time*DELAY+" ms");
+        //console.log("index : "+idx1+" and index :"+idx2+" color changed to : "+ color +" at time  t:"+Time+" * "+ DELAY+" =  "+Time*DELAY+" ms");
 
         const aux = document.getElementsByClassName("array-bar");
 
@@ -77,7 +77,7 @@ export  const singlecolorChangeRequest = (idx1,color1,Time) =>{
 export const heightChangeRequest = (idx,height,Time) =>{
 
     setTimeout(()=>{
-        console.log("index : "+idx+" height changed to : "+ height +" at time  t: "+Time+" * "+ DELAY+" =  "+Time*DELAY+" ms");
+        //console.log("index : "+idx+" height changed to : "+ height +" at time  t: "+Time+" * "+ DELAY+" =  "+Time*DELAY+" ms");
     const aux = document.getElementsByClassName("array-bar");
 
     aux[idx].style.height = `${height}px`;

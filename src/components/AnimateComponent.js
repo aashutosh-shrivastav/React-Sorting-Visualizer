@@ -43,7 +43,7 @@ export function deployAnimations(animations,setIsSorting,setIsSorted){
         }
     }
 
-    console.log("animation loop end setTimeout stack prepared ;");
+    //console.log("animation loop end setTimeout stack prepared ;");
     sortCompletedAnimation(time,setIsSorting,setIsSorted);
 
     
@@ -108,7 +108,7 @@ export function deployMergeAnimations(animations,setIsSorting,setIsSorted){
          }
      }
 
-console.log("merge sort animation stack started ");
+//console.log("merge sort animation stack started ");
 sortCompletedAnimation(time,setIsSorting,setIsSorted);
 
 }
@@ -176,7 +176,7 @@ export function deployQuickAnimations(animations,setIsSorting,setIsSorted){
 
     }
 
-    console.log("animation for quick sort loaded");
+    //console.log("animation for quick sort loaded");
 
     sortCompletedAnimation(time,setIsSorting,setIsSorted);
 
@@ -192,6 +192,6 @@ export function sortCompletedAnimation(time,setIsSorting,setIsSorted){
         setIsSorting(false);
         setIsSorted(true);
     },time);
-    console.log("sorting ended at time t = "+(time*DELAY)+"sec" );
+    //console.log("sorting ended at time t = "+(time*DELAY)+"sec" );
 }
 

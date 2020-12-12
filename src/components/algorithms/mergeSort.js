@@ -6,8 +6,8 @@ export function mergeSortAnimations (array) {
     let animations = [];
 
     function mergeSort(temp,startIndex){
-     console.log(temp);
-     console.log(startIndex);
+     //console.log(temp);
+     //console.log(startIndex);
         if(temp.length===1){
             return temp;
         }
@@ -41,7 +41,7 @@ export function mergeSortAnimations (array) {
                 compair.push(left[leftIndex]);
                 animations.push(compair);
                 
-               console.log("compairing position "+(k +leftIndex)+" and "+(k+left.length+rightIndex) +" putting value at "+k+" + "+result.length+" = "+(k+result.length)+"  = "+ left[leftIndex]);
+               //console.log("compairing position "+(k +leftIndex)+" and "+(k+left.length+rightIndex) +" putting value at "+k+" + "+result.length+" = "+(k+result.length)+"  = "+ left[leftIndex]);
                 result.push(left[leftIndex]);
                 leftIndex++;
             }else{
@@ -56,7 +56,7 @@ export function mergeSortAnimations (array) {
                 compair.push(right[rightIndex]);
                 animations.push(compair);
                 
-               console.log("compairing position "+(k +leftIndex)+" and "+(k+left.length+rightIndex) +" putting value at "+k+" + "+result.length+" = "+(k+result.length)+"  = "+ right[rightIndex]);
+               //console.log("compairing position "+(k +leftIndex)+" and "+(k+left.length+rightIndex) +" putting value at "+k+" + "+result.length+" = "+(k+result.length)+"  = "+ right[rightIndex]);
 
                 result.push(right[rightIndex]);
                 rightIndex++;
@@ -75,7 +75,7 @@ export function mergeSortAnimations (array) {
                 compair.push(right[rightIndex]);
                 animations.push(compair);
                 
-               console.log(" move value at position "+(k+left.length+rightIndex) +" to putting value at "+k+" + "+result.length+" = "+(k+result.length)+"  = "+ right[rightIndex]  );
+               //console.log(" move value at position "+(k+left.length+rightIndex) +" to putting value at "+k+" + "+result.length+" = "+(k+result.length)+"  = "+ right[rightIndex]  );
                 result.push(right[rightIndex]);
                 rightIndex++;
             }
@@ -89,7 +89,7 @@ export function mergeSortAnimations (array) {
                 compair.push(k+result.length);
                 compair.push(left[leftIndex]);
                 animations.push(compair);
-               console.log(" move value at position "+(k+leftIndex) +" to putting value at "+k+" + "+result.length+" = "+(k+result.length)+"  = "+ left[leftIndex]  );
+               //console.log(" move value at position "+(k+leftIndex) +" to putting value at "+k+" + "+result.length+" = "+(k+result.length)+"  = "+ left[leftIndex]  );
 
                 result.push(left[leftIndex]);
                 leftIndex++;
@@ -99,9 +99,9 @@ export function mergeSortAnimations (array) {
     }
     var temp = [...array];
     var arr = mergeSort(temp,0);
-    console.log("mergesort input " + temp);
+   // console.log("mergesort input " + temp);
 
-    console.log("merge sorted array : " +arr);
+    //console.log("merge sorted array : " +arr);
   /*  if(testSort(arr,array)){
         console.log("tested succesfull ");
     }

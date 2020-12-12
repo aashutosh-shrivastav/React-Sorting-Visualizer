@@ -243,9 +243,9 @@ export function xquickSortAnimations (array){
 */
     var temp =quickSort(arr,0,arr.length-1);
 
-    console.log("quicksort input " + array);
+    //console.log("quicksort input " + array);
 
-    console.log("quick sorted array : " +temp);
+    //console.log("quick sorted array : " +temp);
   /* if(testSort(temp,array)){
         console.log("tested succesfull ");
     }
