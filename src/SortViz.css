@@ -1,3 +1,6 @@
+.container{
+    position: relative;
+}
 .navbar{
   background-color: #282c34;
   min-height: 10vh;
@@ -33,4 +36,19 @@
     margin-right: 3px ;
     display: inline-block;
 
+}
+
+.footer{
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #282c34;
+    color: white;
+    min-height: 10vh;
+
+}
+.footer a:hover {
+
+    color: rgb(207, 8, 8);
 }

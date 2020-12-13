@@ -57,6 +57,11 @@ export const DELAY = 5;//5 milisec
             isSorted = {isSorted}
             
             />
+            <footer className ="footer" >
+                <div >Created by Aashutosh Shrivastav @2020<br/>
+                    To know more <a className ="alink" target = "_blank" href = "https://aashutosh-shrivastav.github.io/mysite/">click here</a> 
+                </div> 
+            </footer>
 
         </div>
     );

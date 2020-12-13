@@ -15,6 +15,8 @@ const Navbar = ({array, setArray,setSortType,arraySize,setArraySize,isSorting,se
             //console.log("connot reset soting is under progress");
             return;
         }
+        setIsSorted(false);
+
         setArray( getRandomArray(arraySize));
         const aux = document.getElementsByClassName("array-bar");
         for(let i=0;i<arraySize;i++){
@@ -29,6 +31,9 @@ const Navbar = ({array, setArray,setSortType,arraySize,setArraySize,isSorting,se
            // console.log("connot reset soting is under progress");
             return;
         }
+        if(isSorted){
+             resetArray();
+         }
         setIsSorting(true);
         //console.log("bubble Sort ");
         setSortType('bubble');
@@ -44,6 +49,9 @@ const Navbar = ({array, setArray,setSortType,arraySize,setArraySize,isSorting,se
         if(isSorting){
             //console.log("connot reset soting is under progress");
             return;
+        }
+        if(isSorted){
+            resetArray();
         }
         setIsSorting(true);
 
@@ -61,6 +69,9 @@ const Navbar = ({array, setArray,setSortType,arraySize,setArraySize,isSorting,se
             //console.log("connot reset soting is under progress");
             return;
         }
+        if(isSorted){
+            resetArray();
+        }
         setIsSorting(true);
 
         //console.log("insertion Sort ");
@@ -74,7 +85,10 @@ const Navbar = ({array, setArray,setSortType,arraySize,setArraySize,isSorting,se
         if(isSorting){
             //console.log("connot reset soting is under progress");
             return;
-        }        
+        }    
+        if(isSorted){
+            resetArray();
+        }    
         setIsSorting(true);
 
         //console.log("quick Sort ");
