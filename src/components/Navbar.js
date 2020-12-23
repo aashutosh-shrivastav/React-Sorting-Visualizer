@@ -16,7 +16,7 @@ const Navbar = ({array, setArray,setSortType,arraySize,setArraySize,isSorting,se
             return;
         }
         setIsSorted(false);
-
+        
         setArray( getRandomArray(arraySize));
         const aux = document.getElementsByClassName("array-bar");
         for(let i=0;i<arraySize;i++){

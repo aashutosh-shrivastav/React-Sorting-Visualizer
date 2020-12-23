@@ -36,7 +36,8 @@ import '../SortViz.css';
                         return(
                             <div className = "array-bar" 
                                 key = {index}
-                                style={{height : `${bar}px`,
+                                style={{
+                                    height : `${bar}px`,
                                     backgroundColor : COLOR_BAR
                                     }}>
                                     .
